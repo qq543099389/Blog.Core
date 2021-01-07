@@ -4,6 +4,33 @@
         <name>Blog.Core</name>
     </assembly>
     <members>
+        <member name="M:Blog.Core.AuthHelper.JwtHelper.IssueJwt(Blog.Core.AuthHelper.JwtHelper.TokenModelJwt)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Blog.Core.AuthHelper.JwtHelper.TokenModelJwt">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:Blog.Core.AuthHelper.JwtHelper.TokenModelJwt.Uid">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Blog.Core.AuthHelper.JwtHelper.TokenModelJwt.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:Blog.Core.AuthHelper.JwtHelper.TokenModelJwt.Work">
+            <summary>
+            职能
+            </summary>
+        </member>
         <member name="M:Blog.Core.Controllers.WeatherForecastController.Get">
             <summary>
             获取天气
