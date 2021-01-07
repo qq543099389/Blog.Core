@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blog.Core</name>
+    </assembly>
+    <members>
+        <member name="M:Blog.Core.Controllers.WeatherForecastController.Get">
+            <summary>
+            获取天气
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Blog.Core.WeatherForecast.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+    </members>
+</doc>
