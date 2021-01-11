@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Blog.Core.Controllers
 {
     [Route("api/[controller]")]
-    [Authorize(Roles = "admin")]
+    [Authorize(Roles = "Admin")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]

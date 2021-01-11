@@ -11,7 +11,7 @@ namespace Blog.Core.AuthHelper
 {
     public class JwtHelper
     {
-        private readonly IConfiguration _configuration;
+        static IConfiguration _configuration;
 
         public JwtHelper(IConfiguration configuration)
         {
@@ -22,12 +22,11 @@ namespace Blog.Core.AuthHelper
         /// </summary>
         /// <param name="tokenModel"></param>
         /// <returns></returns>
-        public string IssueJwt(TokenModelJwt tokenModel)
+        public static string IssueJwt(TokenModelJwt tokenModel)
         {
-            var audienceConfig = _configuration.GetSection("Audience");
-            string iss = audienceConfig["Issuer"];//Appsettings.app(new string[] { "Audience", "Issuer" });
-            string aud = audienceConfig["Audience"];
-            string secret = audienceConfig["Secret"];
+            string iss = Appsettings.app(new string[] { "Audience", "Issuer" });
+            string aud = Appsettings.app(new string[] { "Audience", "Audience" });//audienceConfig["Audience"];
+            string secret = Appsettings.app(new string[] { "Audience", "Secret" });//audienceConfig["Secret"];
 
             //var claims = new Claim[] //old
             var claims = new List<Claim>

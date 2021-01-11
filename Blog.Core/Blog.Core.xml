@@ -4,6 +4,26 @@
         <name>Blog.Core</name>
     </assembly>
     <members>
+        <member name="T:Blog.Core.AuthHelper.Appsettings">
+            <summary>
+            appsettings.json操作类
+            </summary>
+        </member>
+        <member name="M:Blog.Core.AuthHelper.Appsettings.app(System.String[])">
+            <summary>
+            封装要操作的字符
+            </summary>
+            <param name="sections">节点配置</param>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.Core.AuthHelper.Appsettings.app``1(System.String[])">
+            <summary>
+            递归获取配置信息数组
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="sections"></param>
+            <returns></returns>
+        </member>
         <member name="M:Blog.Core.AuthHelper.JwtHelper.IssueJwt(Blog.Core.AuthHelper.JwtHelper.TokenModelJwt)">
             <summary>
             颁发JWT字符串
