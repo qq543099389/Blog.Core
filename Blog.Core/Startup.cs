@@ -99,6 +99,7 @@ namespace Blog.Core
             string MysqlConnStr = Configuration.GetConnectionString("MySql");
             IFreeSql fsql = new FreeSql.FreeSqlBuilder()
                 .UseConnectionString(FreeSql.DataType.MySql, MysqlConnStr)
+                .UseLazyLoading(true) //开启延时加载功能
                 .UseAutoSyncStructure(false) //自动同步实体结构到数据库
                 .Build(); //请务必定义成 Singleton 单例模式
             services.AddSingleton(fsql);

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="FreeSql" Version="2.0.105" />
+    <PackageReference Include="FreeSql.Extensions.LazyLoading" Version="2.0.105" />
     <PackageReference Include="FreeSql.Provider.MySql" Version="2.0.105" />
   </ItemGroup>
 
