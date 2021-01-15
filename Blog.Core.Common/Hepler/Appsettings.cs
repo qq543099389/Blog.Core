@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Blog.Core.AuthHelper
+namespace Blog.Core.Common.Helper
 {
     /// <summary>
     /// appsettings.json操作类

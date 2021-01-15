@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Blog.Core.Repository.Base
 {
-    public class BaseRepository<TEntity,TDto> : IBaseRepository<TEntity,TDto> where TEntity : class, new() where TDto : class,new()
+    public class BaseRepository<TEntity,TDto> : IBaseRepository<TEntity> where TEntity : class, new() where TDto : class,new()
     {
         private readonly IFreeSql _freeSql;
 

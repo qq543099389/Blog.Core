@@ -1,4 +1,4 @@
-﻿namespace Blog.Core.Model
+﻿namespace Blog.Core
 {
     /// <summary>
     /// 通用返回信息类
@@ -16,7 +16,7 @@
         /// <summary>
         /// 返回信息
         /// </summary>
-        public string Msg { get; set; } = "服务器异常";
+        public string Msg { get; set; } = "";
         /// <summary>
         /// 返回数据集合
         /// </summary>

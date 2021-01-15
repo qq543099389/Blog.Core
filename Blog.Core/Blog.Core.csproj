@@ -21,6 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Blog.Core.Common\Blog.Core.Common.csproj" />
+    <ProjectReference Include="..\Blog.Core.IServices\Blog.Core.Application.Contracts.csproj" />
     <ProjectReference Include="..\Blog.Core.Model\Blog.Core.Domain.csproj" />
   </ItemGroup>
 

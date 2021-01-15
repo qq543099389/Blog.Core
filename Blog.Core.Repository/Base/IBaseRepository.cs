@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Blog.Core.Repository.Base
 {
-    public interface IBaseRepository<TEntity,TDto> where TEntity : class where TDto : class
+    public interface IBaseRepository<TEntity> where TEntity : class
     {
         /// <summary>
         /// 根据Id查询实体
@@ -79,6 +79,5 @@ namespace Blog.Core.Repository.Base
         /// </summary>
         /// <param name=""></param>
         /// <returns></returns>
-        Task<bool> UpdateByDto(TDto dto);
     }
 }

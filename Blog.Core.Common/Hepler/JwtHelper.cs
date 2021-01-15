@@ -7,7 +7,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 
-namespace Blog.Core.AuthHelper
+namespace Blog.Core.Common.Helper
 {
     public class JwtHelper
     {

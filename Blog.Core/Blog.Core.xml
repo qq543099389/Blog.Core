@@ -57,6 +57,31 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:Blog.Core.MessageModel`1">
+            <summary>
+            通用返回信息类
+            </summary>
+        </member>
+        <member name="P:Blog.Core.MessageModel`1.Status">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:Blog.Core.MessageModel`1.Success">
+            <summary>
+            操作是否成功
+            </summary>
+        </member>
+        <member name="P:Blog.Core.MessageModel`1.Msg">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:Blog.Core.MessageModel`1.Data">
+            <summary>
+            返回数据集合
+            </summary>
+        </member>
         <member name="P:Blog.Core.WeatherForecast.Date">
             <summary>
             日期
